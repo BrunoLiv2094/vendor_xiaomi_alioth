@@ -284,6 +284,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/alioth/proprietary/vendor/firmware/spk1_voice_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk1_voice_delta.txt \
     vendor/xiaomi/alioth/proprietary/vendor/firmware/spk2_playback_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk2_playback_delta.txt \
     vendor/xiaomi/alioth/proprietary/vendor/firmware/spk2_voice_delta.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/spk2_voice_delta.txt \
+    vendor/xiaomi/alioth/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/xiaomi/alioth/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/xiaomi/alioth/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/xiaomi/alioth/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/alioth/proprietary/vendor/lib64/camera/com.qti.sensormodule.alioth_ofilm_hi556_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.alioth_ofilm_hi556_macro.bin \
     vendor/xiaomi/alioth/proprietary/vendor/lib64/camera/com.qti.sensormodule.alioth_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.alioth_ofilm_imx355_ultra.bin \
     vendor/xiaomi/alioth/proprietary/vendor/lib64/camera/com.qti.sensormodule.alioth_ofilm_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.alioth_ofilm_imx582_wide.bin \
@@ -324,6 +328,7 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
     vulkan.adreno \
@@ -331,6 +336,7 @@ PRODUCT_PACKAGES += \
     libCB \
     libOpenCL \
     libVkLayer_q3dtools \
+    libadreno_app_profiles \
     libadreno_utils \
     libadsprpc \
     libc2d30_bltlib \
@@ -344,8 +350,11 @@ PRODUCT_PACKAGES += \
     libfcsam \
     libgpudataproducer \
     libgsl \
+    libkcl \
+    libkernelmanager \
     libllvm-glnext \
     libllvm-qcom \
+    libllvm-qgl \
     libmdsprpc \
     libscveCommon \
     libscveCommon_stub \
@@ -364,6 +373,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.qspmhal@1.0_vendor \
     btaudio_offload_if \
     audio.primary.kona \
     sound_trigger.primary.kona \
